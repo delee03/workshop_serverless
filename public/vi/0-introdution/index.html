@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Categories :: Thiết lập AWS Account</title>
+    <title>Khóa bảo mật U2F :: Thiết lập AWS Account</title>
 
     
-    <link href="/css/nucleus.css?1728662249" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1728662249" rel="stylesheet">
-    <link href="/css/hybrid.css?1728662249" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1728662249" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1728662249" rel="stylesheet">
-    <link href="/css/auto-complete.css?1728662249" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1728662249" rel="stylesheet">
-    <link href="/css/theme.css?1728662249" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1728662249" rel="stylesheet">
+    <link href="/css/nucleus.css?1728662210" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1728662210" rel="stylesheet">
+    <link href="/css/hybrid.css?1728662210" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1728662210" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1728662210" rel="stylesheet">
+    <link href="/css/auto-complete.css?1728662210" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1728662210" rel="stylesheet">
+    <link href="/css/theme.css?1728662210" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1728662210" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1728662249" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1728662210" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1728662249"></script>
+    <script src="/js/jquery-3.3.1.min.js?1728662210"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/vi/categories/">
+  <body class="" data-url="/vi/0-introdution/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1728662249"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1728662249"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1728662210"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1728662210"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1728662249"></script>
+<script type="text/javascript" src="/js/search.js?1728662210"></script>
 
     
   </div>
@@ -84,7 +84,7 @@
     
     <li data-nav-id="/vi/0-introdution/" title="Khóa bảo mật U2F" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/vi/0-introdution/">
@@ -335,7 +335,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/categories/">English</option>
+                      <option id="en" value="//localhost:1313/0-introdution/">English</option>
                     
                   
               
@@ -349,7 +349,7 @@
                   
                     
                     
-                      <option id="vi" value="//localhost:1313/vi/categories/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/0-introdution/" selected>Tiếng Việt</option>
                     
                   
               
@@ -435,7 +435,7 @@
             
           
           
-            <a href='/vi/'>Thiết lập Tài Khoản AWS</a> > Categories
+            <a href='/vi/'>Thiết lập Tài Khoản AWS</a> > Khóa bảo mật U2F
           
         
           
@@ -446,7 +446,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -462,9 +470,7 @@
           
             <h1>
               
-                taxonomy ::
-              
-              Categories
+              Khóa bảo mật U2F
             </h1>
           
 
@@ -472,11 +478,82 @@
 
 
 
-
-
+	<p><strong>Nội dung</strong></p>
 <ul>
-	
+<li><a href="/vi/0-introdution/#kích-hoạt-khóa-bảo-mật-u2f-thông-qua-console">Kích hoạt khóa bảo mật U2F thông qua Console</a></li>
 </ul>
+
+<div class="notices tip" ><p>Nếu bạn không có thiết bị phần cứng , có thể bỏ qua các thao tác dưới đây nhé.</p>
+</div>
+
+<h4 id="kích-hoạt-khóa-bảo-mật-u2f-thông-qua-console">Kích hoạt khóa bảo mật U2F thông qua Console</h4>
+<p>U2F Security Key là một giao thức chứng thực mở cho phép người dùng có thể truy cập các dịch vụ trực tuyếp với một khóa bảo mật duy nhất mà không cần sử dụng đến bất kì phần mềm nào.</p>
+<ol>
+<li>Đăng nhập vào AWS Console.</li>
+<li>Góc trên bên phải, bạn sẽ thấy tên account của bạn, chọn vào và chọn <strong>My Security Credentials</strong> sau đó mở rộng Multi-factor authentication (MFA).</li>
+</ol>
+<p><img alt="Image" src="/images/1-account-setup/MySecurity_v1.png?width=15pc"></p>
+<ol start="3">
+<li>Để quản lí khóa bảo mật U2F, bạn phải có quyền từ bộ quyền sau. ở thanh bên trái, chọn <strong>Policies</strong> sau đó chọn <strong>Create policy</strong>, chọn <strong>JSON</strong> tab và dán phần bên dưới vào:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Version&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Statement&#34;</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Sid&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;AllowManageOwnUserMFA&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Effect&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Action&#34;</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;iam:DeactivateMFADevice&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;iam:EnableMFADevice&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;iam:GetUser&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;iam:ListMFADevices&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;iam:ResyncMFADevice&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Resource&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;arn:aws:iam::*:user/${aws:username}&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Sid&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;DenyAllExceptListedIfNoMFA&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Effect&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Deny&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;NotAction&#34;</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;iam:EnableMFADevice&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;iam:GetUser&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;iam:ListMFADevices&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;iam:ResyncMFADevice&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Resource&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;arn:aws:iam::*:user/${aws:username}&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Condition&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;BoolIfExists&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#34;aws:MultiFactorAuthPresent&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;false&#34;</span>
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="4">
+<li>Chọn <strong>Next: Tags</strong>. Đây là màn hình về <strong>Tags</strong> một công cụ dùng để phân biệt các tài nguyên của AWS.</li>
+<li>Chọn <strong>Next: Review</strong>. Đây là màn hình cho phép bạn review về bộ quyền mà bạn đang tạo ra.</li>
+<li>Nhập tên bộ quyền (ví dụ: MFAHardDevice) và chọn <strong>Create policy</strong>.</li>
+</ol>
+<p><img alt="MFA Policy" src="/images/1-account-setup/MFAPolicy.png?width=90pc"></p>
+<ol start="6">
+<li>Ở thanh bên trái , chọn <strong>Dashboard</strong> và sau đó chọn <strong>Enable MFA</strong>.</li>
+</ol>
+<p><img alt="Dashboard" src="/images/1-account-setup/Dashboard.png?width=90pc"></p>
+<ol start="7">
+<li>Mở rộng Multi-factor authentication (MFA) sau đó chọn <strong>Active MFA</strong>.</li>
+</ol>
+<p><img alt="MFA Section" src="/images/1-account-setup/MFA.png?width=90pc"></p>
+<ol start="8">
+<li>Trong <strong>Manage MFA Device</strong>, chọn <strong>U2F security key</strong> sau đó nhấn <strong>Continue</strong>.</li>
+<li>Cắm khóa bảo mật U2F vào cổng USB của máy tính.</li>
+</ol>
+<p><img alt="Image" src="/images/1-account-setup/U2FSK.png?width=30pc"></p>
+<ol start="10">
+<li>Nhấn vào khóa bảo mật U2F, và sau đó chọn <strong>Close</strong> khi U2F thiết lập thành công.</li>
+</ol>
+
+
+
 
 
 <footer class=" footline" >
@@ -514,8 +591,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -532,6 +607,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -651,8 +729,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/vi/" title="Thiết lập Tài Khoản AWS"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/vi/0-introdution/" title="Khóa bảo mật U2F" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/vi/1-create-new-aws-account/" title="Tạo mới tài khoản AWS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -662,19 +742,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1728662249"></script>
-    <script src="/js/perfect-scrollbar.min.js?1728662249"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1728662249"></script>
-    <script src="/js/jquery.sticky.js?1728662249"></script>
-    <script src="/js/featherlight.min.js?1728662249"></script>
-    <script src="/js/highlight.pack.js?1728662249"></script>
+    <script src="/js/clipboard.min.js?1728662210"></script>
+    <script src="/js/perfect-scrollbar.min.js?1728662210"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1728662210"></script>
+    <script src="/js/jquery.sticky.js?1728662210"></script>
+    <script src="/js/featherlight.min.js?1728662210"></script>
+    <script src="/js/highlight.pack.js?1728662210"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1728662249"></script>
-    <script src="/js/learn.js?1728662249"></script>
-    <script src="/js/hugo-learn.js?1728662249"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1728662210"></script>
+    <script src="/js/learn.js?1728662210"></script>
+    <script src="/js/hugo-learn.js?1728662210"></script>
 
-    <link href="/mermaid/mermaid.css?1728662249" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1728662249"></script>
+    <link href="/mermaid/mermaid.css?1728662210" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1728662210"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

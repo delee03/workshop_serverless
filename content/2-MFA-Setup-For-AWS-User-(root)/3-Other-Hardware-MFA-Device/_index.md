@@ -1,7 +1,7 @@
 +++
 title = "Hardware MFA Device"
 date = 2021
-weight = 3
+weight = 4
 chapter = false
 pre = "<b>2.3. </b>"
 +++
@@ -12,8 +12,8 @@ The following steps require a hardware MFA device.
 
 #### Enabling a hardware MFA device through Console
 
-A hardware MFA device generates a six-digit numeric code based upon a time-synchronized one-time password algorithm. 
-Hardware MFA devices and U2F security keys are both physical devices that you purchase. The difference is that hardware MFA devices generate a code that you view and then enter when prompted when signing it to AWS. 
+A hardware MFA device generates a six-digit numeric code based upon a time-synchronized one-time password algorithm.
+Hardware MFA devices and U2F security keys are both physical devices that you purchase. The difference is that hardware MFA devices generate a code that you view and then enter when prompted when signing it to AWS.
 
 1. Sign-in to the AWS Console.
 2. In the upper right corner, you'll see your account name, select and select **My Security Credentials**.
@@ -21,9 +21,11 @@ Hardware MFA devices and U2F security keys are both physical devices that you pu
 ![Image](/images/1-account-setup/MySecurity_v1.png?width=15pc)
 
 **Note:** To manage a hardware MFA device for your own IAM user while protecting sensitive MFA-related actions, you must have the permissions from the following policy.
+
 <!-- policy not associated with user -->
+
 > 1. In the left bar, select **Policies** then select **Create policy**. Select **JSON** tab and paste the policy document from below:
-> 
+>
 > ```json
 > {
 >     "Version": "2012-10-17",
@@ -59,11 +61,11 @@ Hardware MFA devices and U2F security keys are both physical devices that you pu
 >     ]
 > }
 > ```
-> 
+>
 > 2. Select **Next: Tags**. You'll be presented with a screen about **Tags**, a tool used to identify groups of AWS resources.
-> 3. Select **Next: Review**. This is a screen that allows you to review the policy that you are creating. 
+> 3. Select **Next: Review**. This is a screen that allows you to review the policy that you are creating.
 > 4. Enter the name of the policy (for example, `MFAHardDevice`) and select **Create policy**.
-> 
+>
 > ![MFA Policy](/images/1-account-setup/MFAPolicy.png?width=90pc)
 
 3. In the left bar, select **Dashboard** and then select **Enable MFA**.

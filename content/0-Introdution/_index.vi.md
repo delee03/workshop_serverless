@@ -1,9 +1,9 @@
 +++
 title = "Khóa bảo mật U2F"
 date = 2021
-weight = 2
+weight = 1
 chapter = false
-pre = "<b>2.2. </b>"
+pre = "<b>0. </b>"
 +++
 
 **Nội dung**
