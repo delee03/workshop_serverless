@@ -8,10 +8,10 @@ pre = "<b>2. </b>"
 
 **Content:**
 
--   [Create a new ReactJS Application](#create-an-aws-account)
--   [Initialize a Github Repository](#add-a-payment-method)
--   [Install the Amplify packages](#verify-your-phone-number)
--   [Deploy your app with AWS Amplify](#choose-an-aws-support-plan)
+-   [Create a new ReactJS Application](#1-create-a-new-react-application)
+-   [Initialize a Github Repository](#2-initialize-a-github-repository)
+-   [Install the Amplify packages](#3-install-the-amplify-packages)
+-   [Deploy your app with AWS Amplify](#4-deploy-your-app-with-aws-amplify)
 
 #### Create a new ReactJS Application
 
@@ -92,7 +92,9 @@ npm create amplify@latest -y
 
 2. Running the previous command will scaffold a lightweight Amplify project in the app’s directory.
 
-![Install Successfull Amplify](/images/workshop-setup/1.3_TaiAmplifySuccess.png?width=full) 3. In your terminal window, run the following command to push the changes to GitHub:
+![Install Successfull Amplify](/images/workshop-setup/1.3_TaiAmplifySuccess.png?width=full)
+
+3. In your terminal window, run the following command to push the changes to GitHub:
 
 ```bash
 git add .
@@ -105,3 +107,49 @@ If you have successfully pushed the changes to GitHub, you will see the followin
 ![Push Changed filed to Github](/images/workshop-setup/1.3_PushCode.png?width=full)
 
 ### 4. Deploy your app with AWS Amplify
+
+1. Sign in to the AWS Management console in a new browser window, and open the AWS Amplify console at [https://console.aws.amazon.com/amplify/](https://console.aws.amazon.com/amplify/).
+
+![Image of AWS Amplify Service](/images/workshop-setup/Amplify_Service.png?width=full)
+
+<!-- ![Install Successfull Amplify](/images/workshop-setup/1.3_TaiAmplifySuccess.png?width=full) -->
+
+2. Choose **Deploy** at the center of the page.
+
+![Image of AWS Amplify Console](/images/workshop-setup/1.4_Deploy_With_Amplify.png?width=full)
+
+3. On the Start building with Amplify page, for Deploy your app, **select GitHub**, and select **Next**.
+
+![Choose Github to Deploy](/images/workshop-setup/1.4_DeployOnGithub1.png?width=full)
+
+4. When prompted, authenticate with GitHub by selecting **Authorize AWS Amplify**.
+
+![Athourize with Github](/images/workshop-setup/1_4_Authorization.png?width=35pc)
+
+5. Select repository you want to deploy on Amplify, authenticate with GitHub by selecting **Only select repositories** (you can choose all repositories, this instance I choose only repositories) and choose **Your project : Profile_app** after that click **Install & Authorize**.
+
+![Athourize with Github](/images/workshop-setup/1_4_SelectRepositoryCreated.png?width=40pc)
+
+6. You will be automatically redirected back to the Amplify console, select **the repository**, **main branch** you want to deploy, and then choose **Next**.
+   ![Select Repository Uploaded](/images/workshop-setup/1_4_SelectRepository.png?width=full)
+
+7. Leave the default build settings, and select **Next**.
+   ![Default Setting Config](/images/workshop-setup/1_4_ConfigDefault.png?width=full)
+
+8. Review the settings, and select **Save and deploy**
+
+![Review Setting and deploy](/images/workshop-setup/1_4_Review.png?width=full)
+
+**AWS Amplify** will now build your source code and deploy your app at _https://...amplifyapp.com_, and on every git push your deployment instance will be update automatically . It may take up to 5 minutes
+to deploy your ReactJS app.
+
+9. Once the build completely, select the **Visit deployed URL** button to see your web app up and running live.
+
+![Deploy Successfull](/images/workshop-setup/1_4_DeploySuccess.png?width=full)
+
+10. You can now view your deployed ReactJS app on the AWS Amplify console.You can view you domain name and the status of the deployment.
+    If you see the following screen, **your deployment was successful** and **host** a ReactJS app on AWS Amplify perfectly.
+
+![Deploy Website](/images/workshop-setup/1_4_SuccessfulDeploy1.png?width=full)
+
+**Good job** You have deployed a React application in the AWS Cloud by integrating with GitHub and using AWS Amplify. With AWS Amplify, you can continuously deploy your application in the Cloud and host it on a globally available CDN

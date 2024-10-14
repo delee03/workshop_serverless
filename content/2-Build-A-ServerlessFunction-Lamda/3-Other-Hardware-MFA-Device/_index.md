@@ -1,7 +1,7 @@
 +++
 title = "Hardware MFA Device"
 date = 2021
-weight = 4
+weight = 3
 chapter = false
 pre = "<b>2.3. </b>"
 +++

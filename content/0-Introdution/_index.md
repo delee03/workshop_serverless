@@ -29,7 +29,8 @@ As you go through the workshop, you will learn about the services in detail and 
 
 **An AWS account:** with administrator permission  
 **Nodejs and npm:** Installed on your computer  
-**Git & GitHub account:** Foundational knowledge of  
+**Git & GitHub account:** Foundational knowledge of
+**Visual Studio Code:** Installed on your computer  
 **If you have a FreeTier Account, that's so great**
 
 {{% notice note%}}

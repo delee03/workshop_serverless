@@ -1,6 +1,6 @@
 +++
-title = "MFA for AWS Accounts"
-date = 2021
+title = "Build Serverless function with AWS Lamda"
+date = 2024
 weight = 4
 chapter = false
 pre = "<b>3. </b>"

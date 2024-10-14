@@ -12,21 +12,21 @@
     <title>Create &amp; Deploy a Web Application with ReactJS :: AWS Account Setup</title>
 
     
-    <link href="/css/nucleus.css?1728907062" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1728907062" rel="stylesheet">
-    <link href="/css/hybrid.css?1728907062" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1728907062" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1728907062" rel="stylesheet">
-    <link href="/css/auto-complete.css?1728907062" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1728907062" rel="stylesheet">
-    <link href="/css/theme.css?1728907062" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1728907062" rel="stylesheet">
+    <link href="/css/nucleus.css?1728919060" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1728919060" rel="stylesheet">
+    <link href="/css/hybrid.css?1728919060" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1728919060" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1728919060" rel="stylesheet">
+    <link href="/css/auto-complete.css?1728919060" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1728919060" rel="stylesheet">
+    <link href="/css/theme.css?1728919060" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1728919060" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1728907062" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1728919060" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1728907062"></script>
+    <script src="/js/jquery-3.3.1.min.js?1728919060"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1728907062"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1728907062"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1728919060"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1728919060"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1728907062"></script>
+<script type="text/javascript" src="/js/search.js?1728919060"></script>
 
     
   </div>
@@ -134,13 +134,13 @@
  
   
     
-    <li data-nav-id="/2-mfa-setup-for-aws-user-root/" title="MFA for AWS Accounts" class="dd-item 
+    <li data-nav-id="/2-mfa-setup-for-aws-user-root/" title="Build Serverless function with AWS Lamda" class="dd-item 
         
         
         
         ">
       <a href="/2-mfa-setup-for-aws-user-root/">
-          <b>3. </b>MFA for AWS Accounts
+          <b>3. </b>Build Serverless function with AWS Lamda
           
             <i class="fas fa-check read-icon"></i>
           
@@ -255,7 +255,7 @@
         
         ">
       <a href="/2-mfa-setup-for-aws-user-root/4-testpublic/">
-          <b>2.5. </b>TestPublic
+          <b>2.4. </b>TestPublic
           
             <i class="fas fa-check read-icon"></i>
           
@@ -564,10 +564,10 @@
 
 	<p><strong>Content:</strong></p>
 <ul>
-<li><a href="/1-create-a-web-app/#create-an-aws-account">Create a new ReactJS Application</a></li>
-<li><a href="/1-create-a-web-app/#add-a-payment-method">Initialize a Github Repository</a></li>
-<li><a href="/1-create-a-web-app/#verify-your-phone-number">Install the Amplify packages</a></li>
-<li><a href="/1-create-a-web-app/#choose-an-aws-support-plan">Deploy your app with AWS Amplify</a></li>
+<li><a href="/1-create-a-web-app/#1-create-a-new-react-application">Create a new ReactJS Application</a></li>
+<li><a href="/1-create-a-web-app/#2-initialize-a-github-repository">Initialize a Github Repository</a></li>
+<li><a href="/1-create-a-web-app/#3-install-the-amplify-packages">Install the Amplify packages</a></li>
+<li><a href="/1-create-a-web-app/#4-deploy-your-app-with-aws-amplify">Deploy your app with AWS Amplify</a></li>
 </ul>
 <h4 id="create-a-new-reactjs-application">Create a new ReactJS Application</h4>
 <p>In this task, you will create a React application and deploy it to the Cloud using AWS Amplify.
@@ -618,13 +618,63 @@ Open your source code initilized in the previous step, right click on the <code>
 </span></span></code></pre></div><ol start="2">
 <li>Running the previous command will scaffold a lightweight Amplify project in the app’s directory.</li>
 </ol>
-<p><img alt="Install Successfull Amplify" src="/images/workshop-setup/1.3_TaiAmplifySuccess.png?width=full"> 3. In your terminal window, run the following command to push the changes to GitHub:</p>
+<p><img alt="Install Successfull Amplify" src="/images/workshop-setup/1.3_TaiAmplifySuccess.png?width=full"></p>
+<ol start="3">
+<li>In your terminal window, run the following command to push the changes to GitHub:</li>
+</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add Amplify installed&#34;</span>
 </span></span><span style="display:flex;"><span>git push
 </span></span></code></pre></div><p>If you have successfully pushed the changes to GitHub, you will see the following message in the terminal:</p>
 <p><img alt="Push Changed filed to Github" src="/images/workshop-setup/1.3_PushCode.png?width=full"></p>
 <h3 id="4-deploy-your-app-with-aws-amplify">4. Deploy your app with AWS Amplify</h3>
+<ol>
+<li>Sign in to the AWS Management console in a new browser window, and open the AWS Amplify console at <a href="https://console.aws.amazon.com/amplify/">https://console.aws.amazon.com/amplify/</a>.</li>
+</ol>
+<p><img alt="Image of AWS Amplify Service" src="/images/workshop-setup/Amplify_Service.png?width=full"></p>
+<!-- raw HTML omitted -->
+<ol start="2">
+<li>Choose <strong>Deploy</strong> at the center of the page.</li>
+</ol>
+<p><img alt="Image of AWS Amplify Console" src="/images/workshop-setup/1.4_Deploy_With_Amplify.png?width=full"></p>
+<ol start="3">
+<li>On the Start building with Amplify page, for Deploy your app, <strong>select GitHub</strong>, and select <strong>Next</strong>.</li>
+</ol>
+<p><img alt="Choose Github to Deploy" src="/images/workshop-setup/1.4_DeployOnGithub1.png?width=full"></p>
+<ol start="4">
+<li>When prompted, authenticate with GitHub by selecting <strong>Authorize AWS Amplify</strong>.</li>
+</ol>
+<p><img alt="Athourize with Github" src="/images/workshop-setup/1_4_Authorization.png?width=35pc"></p>
+<ol start="5">
+<li>Select repository you want to deploy on Amplify, authenticate with GitHub by selecting <strong>Only select repositories</strong> (you can choose all repositories, this instance I choose only repositories) and choose <strong>Your project : Profile_app</strong> after that click <strong>Install &amp; Authorize</strong>.</li>
+</ol>
+<p><img alt="Athourize with Github" src="/images/workshop-setup/1_4_SelectRepositoryCreated.png?width=40pc"></p>
+<ol start="6">
+<li>
+<p>You will be automatically redirected back to the Amplify console, select <strong>the repository</strong>, <strong>main branch</strong> you want to deploy, and then choose <strong>Next</strong>.
+<img alt="Select Repository Uploaded" src="/images/workshop-setup/1_4_SelectRepository.png?width=full"></p>
+</li>
+<li>
+<p>Leave the default build settings, and select <strong>Next</strong>.
+<img alt="Default Setting Config" src="/images/workshop-setup/1_4_ConfigDefault.png?width=full"></p>
+</li>
+<li>
+<p>Review the settings, and select <strong>Save and deploy</strong></p>
+</li>
+</ol>
+<p><img alt="Review Setting and deploy" src="/images/workshop-setup/1_4_Review.png?width=full"></p>
+<p><strong>AWS Amplify</strong> will now build your source code and deploy your app at <em><a href="https://...amplifyapp.com">https://...amplifyapp.com</a></em>, and on every git push your deployment instance will be update automatically . It may take up to 5 minutes
+to deploy your ReactJS app.</p>
+<ol start="9">
+<li>Once the build completely, select the <strong>Visit deployed URL</strong> button to see your web app up and running live.</li>
+</ol>
+<p><img alt="Deploy Successfull" src="/images/workshop-setup/1_4_DeploySuccess.png?width=full"></p>
+<ol start="10">
+<li>You can now view your deployed ReactJS app on the AWS Amplify console.You can view you domain name and the status of the deployment.
+If you see the following screen, <strong>your deployment was successful</strong> and <strong>host</strong> a ReactJS app on AWS Amplify perfectly.</li>
+</ol>
+<p><img alt="Deploy Website" src="/images/workshop-setup/1_4_SuccessfulDeploy1.png?width=full"></p>
+<p><strong>Good job</strong> You have deployed a React application in the AWS Cloud by integrating with GitHub and using AWS Amplify. With AWS Amplify, you can continuously deploy your application in the Cloud and host it on a globally available CDN</p>
 
 
 
@@ -857,7 +907,7 @@ Open your source code initilized in the previous step, right click on the <code>
 			<a class="nav nav-prev" href="/0-introdution/" title="Introduction"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/2-mfa-setup-for-aws-user-root/" title="MFA for AWS Accounts" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/2-mfa-setup-for-aws-user-root/" title="Build Serverless function with AWS Lamda" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -867,19 +917,19 @@ Open your source code initilized in the previous step, right click on the <code>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1728907062"></script>
-    <script src="/js/perfect-scrollbar.min.js?1728907062"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1728907062"></script>
-    <script src="/js/jquery.sticky.js?1728907062"></script>
-    <script src="/js/featherlight.min.js?1728907062"></script>
-    <script src="/js/highlight.pack.js?1728907062"></script>
+    <script src="/js/clipboard.min.js?1728919060"></script>
+    <script src="/js/perfect-scrollbar.min.js?1728919060"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1728919060"></script>
+    <script src="/js/jquery.sticky.js?1728919060"></script>
+    <script src="/js/featherlight.min.js?1728919060"></script>
+    <script src="/js/highlight.pack.js?1728919060"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1728907062"></script>
-    <script src="/js/learn.js?1728907062"></script>
-    <script src="/js/hugo-learn.js?1728907062"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1728919060"></script>
+    <script src="/js/learn.js?1728919060"></script>
+    <script src="/js/hugo-learn.js?1728919060"></script>
 
-    <link href="/mermaid/mermaid.css?1728907062" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1728907062"></script>
+    <link href="/mermaid/mermaid.css?1728919060" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1728919060"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
