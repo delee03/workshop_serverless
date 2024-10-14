@@ -1,9 +1,9 @@
 +++
 title = "Getting Support for Account Authentication"
 date = 2020
-weight = 4
+weight = 6
 chapter = false
-pre = "<b>4. </b>"
+pre = "<b>5. </b>"
 +++
 
 During AWS account setup, sometimes problems may arise when validating contact number information, such as failure to receive SMS messages or calls from the AWS. To remediate this issue, please follow the following steps to complete the vation of the account information:

@@ -1,9 +1,9 @@
 +++
 title = "Clean up resources"
 date = 2021
-weight = 6
+weight = 7
 chapter = false
-pre = "<b>5. </b>"
+pre = "<b>6. </b>"
 +++
 
 {{% notice note%}}

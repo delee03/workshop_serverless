@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/1-create-new-aws-account/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <loc>//localhost:1313/0-introdution/</loc>
+    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/1-create-new-aws-account/"
+                href="//localhost:1313/vi/0-introdution/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/1-create-new-aws-account/"
+                href="//localhost:1313/0-introdution/"
                 />
   </url><url>
     <loc>//localhost:1313/</loc>
@@ -28,9 +28,6 @@
                 href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:1313/0-introdution/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/2-mfa-setup-for-aws-user-root/1-virtual-mfa-device/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
@@ -44,8 +41,18 @@
                 href="//localhost:1313/2-mfa-setup-for-aws-user-root/1-virtual-mfa-device/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-mfa-setup-for-aws-user-root/4-testpublic/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <loc>//localhost:1313/1-create-new-aws-account/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/1-create-new-aws-account/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/1-create-new-aws-account/"
+                />
   </url><url>
     <loc>//localhost:1313/2-mfa-setup-for-aws-user-root/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
@@ -111,6 +118,12 @@
                 hreflang="en"
                 href="//localhost:1313/4-verify-new-account/"
                 />
+  </url><url>
+    <loc>//localhost:1313/2-mfa-setup-for-aws-user-root/4-testpublic/</loc>
+    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/5-cleanup/</loc>
+    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link
