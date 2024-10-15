@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/5-add-interactivity/1-install-the-amplify-libraries/</loc>
+    <lastmod>1970-01-01T07:33:44+07:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/</loc>
     <lastmod>1970-01-01T07:33:44+07:00</lastmod>
     <xhtml:link
@@ -15,18 +18,8 @@
                 href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-build-a-serverlessfunction-lamda/1-virtual-mfa-device/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/2-build-a-serverlessfunction-lamda/1-virtual-mfa-device/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/2-build-a-serverlessfunction-lamda/1-virtual-mfa-device/"
-                />
+    <loc>//localhost:1313/5-add-interactivity/2-style-the-app-ui/</loc>
+    <lastmod>1970-01-01T07:33:44+07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/0-introdution/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
@@ -39,19 +32,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/0-introdution/"
-                />
-  </url><url>
-    <loc>//localhost:1313/2-build-a-serverlessfunction-lamda/2-u2f-security-key/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/2-build-a-serverlessfunction-lamda/2-u2f-security-key/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/2-build-a-serverlessfunction-lamda/2-u2f-security-key/"
                 />
   </url><url>
     <loc>//localhost:1313/1-create-a-web-app/</loc>
@@ -67,18 +47,8 @@
                 href="//localhost:1313/1-create-a-web-app/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-build-a-serverlessfunction-lamda/3-other-hardware-mfa-device/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/2-build-a-serverlessfunction-lamda/3-other-hardware-mfa-device/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/2-build-a-serverlessfunction-lamda/3-other-hardware-mfa-device/"
-                />
+    <loc>//localhost:1313/5-add-interactivity/3-implement-the-ui/</loc>
+    <lastmod>1970-01-01T07:33:44+07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/2-build-a-serverlessfunction-lamda/</loc>
     <lastmod>1970-01-01T07:33:44+07:00</lastmod>
@@ -93,11 +63,8 @@
                 href="//localhost:1313/2-build-a-serverlessfunction-lamda/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-build-a-serverlessfunction-lamda/4-testpublic/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/3-create-data-table/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <lastmod>1970-01-01T07:33:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -110,7 +77,7 @@
                 />
   </url><url>
     <loc>//localhost:1313/4-link-serverlessfunction-towebapp/</loc>
-    <lastmod>1970-01-01T07:33:40+07:00</lastmod>
+    <lastmod>1970-01-01T07:33:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -122,10 +89,11 @@
                 href="//localhost:1313/4-link-serverlessfunction-towebapp/"
                 />
   </url><url>
+    <loc>//localhost:1313/5-add-interactivity/</loc>
+    <lastmod>1970-01-01T07:33:44+07:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/6-cleanup/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/5-add-interactivity/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link
