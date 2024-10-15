@@ -1,55 +1,53 @@
 +++
-title = "Getting Support for Account Authentication"
-date = 2020
+title = "Link Serverless function to Web Application"
+date = 2024
 weight = 6
 chapter = false
 pre = "<b>5. </b>"
 +++
 
-During AWS account setup, sometimes problems may arise when validating contact number information, such as failure to receive SMS messages or calls from the AWS. To remediate this issue, please follow the following steps to complete the vation of the account information:
+In this section, you will update the Amplify Auth resources to use the Lambda function you created in the previous module as an Amazon Cognito post confirmation invocation. When the user completes the sign up, the function will use the GraphQL API and capture the user’s email into the DynamoDB table.
 
-**Content:**
+<!-- **Content:**
 
 -   [Verify your account information](#verify-your-account-information)
--   [Create a support case with AWS Support](#create-a-support-case-with-aws-support)
+-   [Create a support case with AWS Support](#create-a-support-case-with-aws-support) -->
 
-#### Verify your account information
+#### Set up Amplify Auth
 
-Kindly check your account details again and make sure they are entered correctly:
+1. Your auth resource is configured allowing the user to sign up using email, but you need to update the resource to invoke the previously created postConfirmation function when the user signs up.
 
--   Check that the phone number and international calling code are correctly enetered to receive SMS or calls.
--   If you use a mobile phone, check your phone to make sure you are still within coverage to receive SMS or calls.
--   Check that the payment method information has been entered correctly.
+![Update Auth](/images/workshop-setup/4_1_UpdateResource1.png?width=full)
 
-#### Create a support case with AWS Support
+Add the following code to the `amplify/auth/resource.ts` file:
 
-If you are still not able to receive an SMS message or authentication call even after verifying your account information, please contact AWS Support to assist you in manually activating your account.
+```bash
+import { defineAuth } from '@aws-amplify/backend';
+import { postConfirmation } from './post-confirmation/resource';
 
-1. Go to the [AWS Support Console](https://aws.amazon.com/support/) and select **Create case**.
+export const auth = defineAuth({
+  loginWith: {
+    email: true,
+  },
+  triggers: {
+    postConfirmation
+  }
+});
+```
 
-![AWS Support](/images/1-account-setup/1.png?width=90pc)
-
-2. Select **Account and billing support** and enter the support information:
-
-    **Type:** Select **Account**.
-
-    **Category:** Select **Activation**.
-
-    **Subject:** Write your encounter briefly (e.g. **Did not receive an SMS message or call for verification**)
-
-    **Description:** Provide details of your situation.
-
-    **Attachments:** Attach any images which may lend greater clarify to the situation.
-
-![AWS Support](/images/1-account-setup/2.png?width=90pc)
-
-3. Under **Contact options**, select **Chat** in **Contact methods**.
-
-![AWS Support](/images/1-account-setup/3.png?width=90pc)
-
-4. Click **Submit**.
-5. The AWS Support team will contact you and assist in activating your account.
-
-{{% notice note%}}
+<!-- {{% notice note%}}
 You can create support requests with AWS Support even if your account is not activated.
-{{% /notice%}}
+{{% /notice%}} -->
+
+2. The sandbox will automatically get updated and redeployed once the file is updated. If the sandbox is not running, you can run the following command in a new terminal window to start it.
+
+```bash
+npx ampx sandbox
+
+```
+
+3. Once the cloud sandbox has been fully deployed, your terminal will display a confirmation message and the amplify_outputs.json file will be generated/updated and added to your profilesapp project.
+
+![Amplify Outputs](/images/workshop-setup/4.1_CheckSandboxRunning.png?width=full)
+
+You used Amplify to configure auth and configured the Lambda function to be invoked when the user signs in to the app.

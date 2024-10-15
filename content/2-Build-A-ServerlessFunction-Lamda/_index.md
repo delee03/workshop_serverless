@@ -6,12 +6,39 @@ chapter = false
 pre = "<b>3. </b>"
 +++
 
-For increased security, we recommend that you configure multi-factor authentication (MFA) to help protect your AWS resources.
+#### Create a Lambda function
 
-You can enable **one** MFA device (of any kind) per root user or IAM user.
+In this section, you will create a Lambda function that is triggered when a user signs up for the application. The Lambda function will capture the user's email and save it in the database.
 
-In this guide, we will go through 3 MFA options:
+In you project directory:
 
-1. [**Virtual MFA devices**](1-virtual-mfa-device) (applications) on your smartphone such as Microsoft Authenticator, Google Authenticator, or Okta Verify.
-2. Physical [**U2F security key**](2-u2f-security-key) such as a YubiKey.
-3. [**Hardware MFA devices**](3-other-hardware-mfa-device) such as the Gemalto token.
+1. Navigate to the profilesapp/amplify/auth folder
+2. Create a new folder inside the amplify/auth folder and name it _**post-confirmation**_
+3. Then create 2 files inside the _**post-confirmation**_ folder, name them **resource.ts** and **handler.ts** respectively.
+   ![Create Lambda Function](/images/workshop-setup/2_1_create_folder_post.png?width=full)
+
+#### Update the resource.ts file with the following code, then save it.:
+
+![Update Resource.TS](/images/workshop-setup/2_1_updateResourceTS.png?width=full)
+
+```bash
+import { defineFunction } from '@aws-amplify/backend';
+
+export const postConfirmation = defineFunction({
+  name: 'post-confirmation',
+});
+```
+
+#### Update the hanlder.ts file with the following code, then save it.:
+
+![Update Handler.TS](/images/workshop-setup/2_1_updateHandlerTS.png?width=full)
+
+```bash
+import type { PostConfirmationTriggerHandler } from "aws-lambda";
+
+export const handler: PostConfirmationTriggerHandler = async (event) => {
+  return event;
+};
+```
+
+You have defined a Lambda function using Amplify. The function is named post-confirmation and is triggered when a user signs up for the application. The function returns the event object.
